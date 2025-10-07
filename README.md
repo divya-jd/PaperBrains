@@ -4,7 +4,7 @@ PaperBrains is an AI-driven **document intelligence system** that combines the p
 
 It transforms unstructured visual data into structured insights — automating what traditionally required manual review.
 
-##💡 Project Overview
+## Project Overview
 
 PaperBrains mimics how humans read documents:
 
@@ -16,7 +16,7 @@ PaperBrains mimics how humans read documents:
 
 This architecture enables multimodal reasoning — where both text and visuals contribute to understanding the document holistically.
 
-##🧩 Features
+## Features
 
 > **OCR-based text extraction** via pytesseract
 
@@ -30,7 +30,7 @@ This architecture enables multimodal reasoning — where both text and visuals c
 
 > **Evaluation framework** for extraction accuracy and latency
 
-##🏗️ Setup & Installation
+## Setup & Installation
 
 git clone https://github.com/divya-jd/PaperBrains.git
 cd PaperBrains
@@ -44,16 +44,10 @@ pip install -r requirements.txt
 ## Architecture Diagram
 
 Document Image
-      ↓
- [ OCR - Tesseract ]
-      ↓
- [ CLIP - Visual Embeddings ]
-      ↓
- [ LLM (GPT-4) Summarizer ]
-      ↓
- Structured Insights (JSON)
+      
+ [ OCR - Tesseract ] -> [ CLIP - Visual Embeddings ] -> [ LLM (GPT-4) Summarizer ] -> Structured Insights (JSON)
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Category            | Tools                           |
 | ------------------- | ------------------------------- |
@@ -64,7 +58,7 @@ Document Image
 | **Data**            | PNG, JPG, PDF                   |
 | **Deployment**      | Docker, AWS Lambda (optional)   |
 
-## 💬 Example API Response
+## Example API Response
 {
   "entities": {
     "invoice_number": "INV-2025-0043",
