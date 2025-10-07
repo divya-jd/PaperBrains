@@ -1,0 +1,11 @@
+torch
+transformers
+pytesseract
+opencv-python
+Pillow
+langchain
+openai
+pdf2image
+python-dotenv
+fastapi
+uvicorn
